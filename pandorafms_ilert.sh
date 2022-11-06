@@ -1,6 +1,6 @@
 #!/bin/bash
 
-res_code=$(curl -o /dev/null -s -w "%{http_code}\n" -X POST "https://api.ilert.dev/api/v1/events/pandorafms/${1}" -H "Content-Type: application/json" -d '{
+res_code=$(curl -o /dev/null -s -w "%{http_code}\n" -X POST "https://api.ilert.com/api/v1/events/pandorafms/${1}" -H "Content-Type: application/json" -d '{
      "eventType": "'"${2}"'",
      "title": "'"${4}"'",
      "description": "'"${5}"'",
